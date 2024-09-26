@@ -17,9 +17,15 @@ li.onclick = function () {
     li.classList.toggle('completed');
   };
 
+
   var deleteButton = document.createElement('button');
-  deleteButton.innerText = "Delete";
+  var deleteImg = document.createElement('img');
+  deleteImg.src = './Images/folder.png'; 
+  deleteImg.alt = 'Delete';
+  deleteImg.style.width = '20px'; 
+  deleteButton.appendChild(deleteImg);
   li.appendChild(deleteButton);
+  
 
   deleteButton.onclick = ()=>{
 li.remove();
