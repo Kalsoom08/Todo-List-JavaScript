@@ -4,6 +4,9 @@ let ul = document.getElementById("data-list");
 
 
 button.addEventListener('click', function(event) {
+  if (!input.value.trim()) {
+    return alert("Todo can't be empty!")
+}
   event.preventDefault(); 
   var li = document.createElement('li');
   li.textContent = input.value;
