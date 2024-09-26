@@ -13,8 +13,18 @@ button.addEventListener('click', function(event) {
   ul.appendChild(li);
   input.value = "";
   
-
-  li.onclick = function () {
+li.onclick = function () {
     li.classList.toggle('completed');
   };
+
+  var deleteButton = document.createElement('button');
+  deleteButton.innerText = "Delete";
+  li.appendChild(deleteButton);
+
+  deleteButton.onclick = ()=>{
+li.remove();
+  }
+
 });
+
+
