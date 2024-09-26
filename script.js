@@ -11,7 +11,7 @@ button.addEventListener('click', function(event) {
   input.value = "";
   
 
-  // li.onclick = function () {
-  //   li.classList.toggle('completed');
-  // };
+  li.onclick = function () {
+    li.classList.toggle('completed');
+  };
 });
