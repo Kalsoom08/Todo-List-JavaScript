@@ -7,8 +7,8 @@ button.addEventListener('click', function(event) {
   event.preventDefault(); 
   var li = document.createElement('li');
   li.textContent = input.value;
-  // ul.appendChild(li);
-  // input.value = "";
+  ul.appendChild(li);
+  input.value = "";
   
 
   // li.onclick = function () {
