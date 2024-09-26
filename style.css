@@ -15,7 +15,46 @@ body{
 }
 
 form{
-display: flex;
+display: grid;
 place-items: center;
 place-content: center;
+padding: 10px;
+
+}
+input{
+	width: 350px;
+	height: 50px;
+	margin-right: 05px;
+	border-radius: 5px;
+	border: none;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+button{
+	height: 50px;
+	width: 100px;
+	background-color: transparent;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button img{
+	height: 40px;
+}
+
+li {
+  display: block;
+  margin: 10px auto; 
+  background-color: rgb(62, 142, 142);
+  list-style-type: none;
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  border-radius: 5px; 
+}
+
+
+.completed{
+	text-decoration: line-through;
+	color: rgba(75, 67, 67, 0.507);
 }
