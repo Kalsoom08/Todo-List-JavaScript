@@ -1,36 +1,32 @@
 let input = document.getElementById("data-input");
-let button =  document.getElementById("add-button");
+let button = document.getElementById("add-button");
 let ul = document.getElementById("data-list");
-
 
 button.addEventListener('click', function(event) {
   if (!input.value.trim()) {
-    return alert("Todo can't be empty!")
-}
-  event.preventDefault(); 
+    return alert("Todo can't be empty!");
+  }
+  event.preventDefault();
+
   var li = document.createElement('li');
   li.textContent = input.value;
   ul.appendChild(li);
   input.value = "";
-  
-li.onclick = function () {
+
+  li.onclick = function() {
     li.classList.toggle('completed');
   };
 
-
   var deleteButton = document.createElement('button');
   var deleteImg = document.createElement('img');
-  deleteImg.src = './Images/folder.png'; 
+  deleteImg.src = './Images/delete (1).png'; 
   deleteImg.alt = 'Delete';
   deleteImg.style.width = '20px'; 
+  deleteImg.style.height = '20px';
   deleteButton.appendChild(deleteImg);
   li.appendChild(deleteButton);
-  
 
-  deleteButton.onclick = ()=>{
-li.remove();
-  }
-
+  deleteButton.onclick = () => {
+    li.remove();
+  };
 });
-
-
