@@ -16,7 +16,19 @@ body {
 body {
   transition: background-image 0.5s ease;
 }
+.theme-toggle{
+  position: absolute;
+  top: 10px;
+  right: 100px;
 
+}
+.theme-toggle button{
+  border: transparent;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #3e8e8e93;
+}
 
 .main-container {
 
@@ -53,7 +65,7 @@ input:focus {
   border-color: #3e8e8e;
 }
 
-button {
+#add-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,16 +78,16 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+#add-button:hover {
   background-color: #2f6c6c;
 }
 
-button img {
+#add-button img {
   height: 30px;
   width: 30px;
 	transition: transform 0.2s;
 }
-button img:hover{
+#add-button img:hover{
 	transform: scale(1.2);
 }
 ul {
@@ -90,7 +102,7 @@ li {
   align-items: center;
   margin-bottom: 15px;
   background-color: #3e8e8e;
-  padding:0px 5px;
+  padding:15px 10px;
   color: white;
   font-size: 18px;
   border-radius: 10px;
