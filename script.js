@@ -30,3 +30,22 @@ button.addEventListener('click', function(event) {
     li.remove();
   };
 });
+
+
+let themeToggleBtn = document.getElementById('theme-toggle-btn');
+let body = document.body;
+var img = document.getElementById('btn-img');
+var mainContainer = document.getElementById('main-div');
+
+body.style.transition = 'background-image 0.5s ease';
+themeToggleBtn.addEventListener('click', function() {
+  if (body.style.backgroundImage === 'url("./Images/b4.jpg")') {
+    body.style.backgroundImage = 'url("./Images/b2.jpg")';
+    themeToggleBtn.textContent = '🌞';
+    mainContainer.style.backgroundColor = 'rgba(240, 248, 255, 0.543)';
+  } else {
+    body.style.backgroundImage = 'url("./Images/b4.jpg")';
+    themeToggleBtn.textContent = '🌙';
+   mainContainer.style.backgroundColor ="rgba(0, 0, 0, 0.326)"
+  }
+});

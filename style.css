@@ -13,14 +13,21 @@ body {
   height: 100vh;
   font-family: 'Arial', sans-serif;
 }
+body {
+  transition: background-image 0.5s ease;
+}
+
 
 .main-container {
-  margin-top: -70px;
+
   background-color: rgba(240, 248, 255, 0.543);
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
   width: 400px;
+  overflow-y: auto; 
+	overflow-x: auto;
+	max-height: 400px;
 }
 
 form {
@@ -66,8 +73,11 @@ button:hover {
 button img {
   height: 30px;
   width: 30px;
+	transition: transform 0.2s;
 }
-
+button img:hover{
+	transform: scale(1.2);
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -84,6 +94,7 @@ li {
   color: white;
   font-size: 18px;
   border-radius: 10px;
+	cursor: pointer;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -109,3 +120,4 @@ li button {
   display: flex;
   align-items: center;
 }
+
